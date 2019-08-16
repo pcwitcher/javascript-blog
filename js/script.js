@@ -104,7 +104,7 @@ function generateTags() {
     /* START LOOP: for each tag */
     for (let tag of articleTagsArray) {
       /* generate HTML of the link */
-      const linkHTML = '<li><a href="#' + tag + '"</a></li>';
+      const linkHTML = '<li><a href="#' + 'tag-' + '"><span>' + tag + '</span></a></li>';
       /* add generated code to html variable */
       html = html + linkHTML;
       /* END LOOP: for each tag */
@@ -122,16 +122,15 @@ function tagClickHandler(event) {
   event.preventDefault();
   /* make new constant named "clickedElement" and give it the value of "this" */
   const clickedElement = this;
-  console.log('Tag was clicked', this);
+  console.log('Tag was clicked');
   console.log(event);
   /* make a new constant "href" and read the attribute "href" of the clicked element */
-  const link = this.querySelector('a[href^="#tag-"]');
-  const href = link.getAttribute('href');
+  //const link = this.querySelector('a[href^="#tag-"]');
+  const href = this.getAttribute('href');
   /* make a new constant "tag" and extract tag from the "href" constant */
   const tag = href.replace('#tag-', '');
   /* find all tag links with class active */
   const activeTagLinks = document.querySelectorAll('a.active');
-  console.log(activeTagLinks);
   /* START LOOP: for each active tag link */
   for (let activeTagLink of activeTagLinks) {
     /* remove class active */
