@@ -110,4 +110,35 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+/* Tags */
+.tag-size-1 {
+  font-size: 100%;
+}
+
+.tag-size-2 {
+  font-size: 120%;
+}
+
+.tag-size-3 {
+  font-size: 140%;
+}
+
+.tag-size-4 {
+  font-size: 160%;
+}
+
+.tag-size-5 {
+  font-size: 180%;
+  color: red;
+}
+
+.tags li {
+  display: inline;
+  line-height: 0.5;
+}
+
+.tags a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
