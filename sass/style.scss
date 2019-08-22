@@ -137,19 +137,22 @@ body {
 }
 
 .tag-size-2 {
-  font-size: 120%;
+  font-size: 110%;
+  color: blueviolet;
 }
 
 .tag-size-3 {
-  font-size: 140%;
+  font-size: 120%;
+  color: yellow;
 }
 
 .tag-size-4 {
-  font-size: 160%;
+  font-size: 130%;
+  color: orange;
 }
 
 .tag-size-5 {
-  font-size: 180%;
+  font-size: 140%;
   color: red;
 }
 
@@ -159,5 +162,14 @@ body {
 }
 
 .tags a {
+  text-decoration: none;
+}
+
+/* Authors */
+.sidebar .authors li {
+  display: inline-block;
+}
+
+.authors li a {
   text-decoration: none;
 }
